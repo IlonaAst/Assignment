@@ -6,7 +6,7 @@ int number = 0;
 while (true)
 {
     Console.Write("Введите пятизначное число: ");
-    if (int.TryParse(Console.ReadLine(), out number)) 
+    if (int.TryParse(Console.ReadLine(), out number) %% (number > 10000 && number < 1000000)) 
         break;
     else
         Console.WriteLine("Неверное число.");
