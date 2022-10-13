@@ -19,6 +19,6 @@ Y2 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите Z2:");
 Z2 = Convert.ToInt32(Console.ReadLine());
 
-distance = Math.Pow((Math.Pow(X2 - X1, 2) + Math.Pow(Y2 - Y1, 2) + Math.Pow(Z2 - Z1, 2) * 1.0), 0.5);
+distance = Math.Sqrt(Math.Pow(X2 - X1, 2) + Math.Pow(Y2 - Y1, 2) + Math.Pow(Z2 - Z1, 2) * 1.0);
 Console.WriteLine($"Расстояние между точками = {distance}");
 
